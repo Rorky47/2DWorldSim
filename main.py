@@ -11,7 +11,7 @@ pygame.init()
 Runing = True
 Sec, Frame, FPS = 0, 0 , 0
 
-terrain = Map_Render.load_Map("world.map")
+terrain = Map_Render.load_Map("maps//world.map")
 
 WHITE = (255, 255, 255)
 
@@ -25,6 +25,7 @@ def fps():
         FPS = Frame
         Frame = 0
         Sec = time.strftime("%S")
+
 def Render_Window():
     global window, Window_H, Window_W, window_title
     Window_W, Window_H = 800, 650
