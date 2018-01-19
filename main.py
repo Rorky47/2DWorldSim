@@ -15,6 +15,7 @@ terrain = Map_Render.load_Map("world.map")
 
 WHITE = (255, 255, 255)
 
+
 def fps():
     global Sec, Frame, FPS
 

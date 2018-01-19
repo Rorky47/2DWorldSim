@@ -24,15 +24,13 @@ class Map_Render:
             map_data[tile] = map_data[tile].replace("\n", "")
             tiles.append(map_data[tile].split(":"))
 
-        i = 0
         for tile in tiles:
             tile[0] = tile[0].split(",")
             pos = tile[0]
             for p in pos:
+                print(p)
                 pos[pos.index(p)] = int(p)
-                print(pos[1])
-        print
-        tiles[tiles.index(tiles)] = (pos, tile[1])
+            tiles[tiles.index(tiles)] = (pos, tile[1])
 
         terrain = pygame.Surface(map_size, pygame.HWSURFACE)
 
