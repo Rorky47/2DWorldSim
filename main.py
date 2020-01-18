@@ -11,7 +11,7 @@ pygame.init()
 Runing = True
 Sec, Frame, FPS = 0, 0 , 0
 
-terrain = Map_Render.load_Map("world.map")
+worldTerrain = Map_Render.load_Map("world.map")
 
 WHITE = (255, 255, 255)
 
@@ -64,9 +64,9 @@ while Runing:
             Globals.cam_x +=1
 
     window.fill(WHITE)
-    print(FPS)
+    #print(FPS)
 
-    window.blit(terrain, (Globals.cam_x, Globals.cam_y))
+    window.blit(worldTerrain, (Globals.cam_x, Globals.cam_y))
 
     fps()
     pygame.display.update()
